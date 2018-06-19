@@ -20,6 +20,7 @@ You must crate a Google translation account to get this file.
 EXAMPLE :  export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/[FILE_NAME].json"
 
 ]    Use this to download and create text containing a comprehensive list of English words ending in ty.  [
+
 This list we will use to search for French words.  Once we do the translation any French word that does not end with té  will be omited.
 
 curl http://mo-de.net/d/wordsEn.txt  | egrep -i -h ".*ty$" | sort > englishTY.txt
